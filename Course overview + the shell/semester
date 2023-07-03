@@ -1,0 +1,5 @@
+#!/bin/sh
+
+curl --head --silent https://missing.csail.mit.edu | grep --ignore-case last-modified > ~/last-modified.txt
+
+cat /sys/class/power_supply/BAT0/capacity
